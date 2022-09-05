@@ -85,14 +85,14 @@ function render() {
   })
   if (winner === null) {
     if(turn === 1) {
-      messageEl.textContent = "Player One- Time to play!"
+      messageEl.textContent = "Player One - Time to play!"
     } else {
-      messageEl.textContent = "Player Two- Time to play!"
+      messageEl.textContent = "Player Two - Time to play!"
     }
   } else if (winner === 'T') {
     messageEl.textContent = "It's a tie!"
   } else if (winner === 1) {
-    messageEl.textContent = "Congrats Player One, You Won!"
+    messageEl.textContent = "Player One Wins!"
     } else if (winner === -1)
-    messageEl.textContent = "Congrats Player Two, You Won!"
+    messageEl.textContent = "Player Two Wins!"
 }
